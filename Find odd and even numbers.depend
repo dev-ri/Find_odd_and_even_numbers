@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1577064277 source:d:\desktop\c-c++ programs\find_odd_and_even_numbers\main.c
+	<stdio.h>
+	<stdlib.h>
+
