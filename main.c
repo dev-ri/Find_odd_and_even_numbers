@@ -3,7 +3,7 @@
 
 int main()
 {
-    int min, max, newMin, newMax;
+    int min, max, newMin, sum = 0, newMax;
     char ans;
 
     printf("Input your range(Example: 1-100) : ");
@@ -23,12 +23,19 @@ int main()
         if(newMin%2 == 0){
             newMin = newMin + 1;
         }
-        printf("%d-%d",newMin,newMax);
     }
     else if(ans == 'e' | ans == 'E'){
         if(newMin%2 == 1){
             newMin = newMin + 1;
         }
-        printf("%d-%d",newMin,newMax);
     }
+
+    //now lets make a while loop for adding +2 until it hits the max number or limit!!
+
+    sum = newMin;
+    while(sum < newMax){
+        printf("    %d\n",sum);
+        sum = sum + 2;
+    }
+    return 0;
 }
